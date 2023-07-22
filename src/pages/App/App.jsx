@@ -43,7 +43,7 @@ const App = () => {
       <main className="App">
         <NavBar />
         <Routes>
-          <Route path="/home" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/restaurant" element={<RestaurantPage />} />
         </Routes>

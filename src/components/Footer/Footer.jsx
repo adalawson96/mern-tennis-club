@@ -3,32 +3,22 @@ import './Footer.css';
 export default function Footer(){
     return(
         <footer>
-            {/* <body> */}
                 <div className="footer">
                     <div className="col-1">
-                        <h3>NEWSLETTER</h3><br/>
-                        <h5>Suscribe to be the first to hear about new arrivals and exclusive products.</h5>
-                        <form>
-                            <input type="text" placeholder='email@example.com' required/>
-                            <button type="submit">GO</button>
-                        </form>
+                     {/* INSERT MAP? */}
+                        <img src="./tennisLogo.png" alt="Logo" />
                     </div>
                     <div className="col-2">
-                        <h5>Our mission as a small batch roaster is to find and serve up the sweetest, most sustainable coffees being grown. We practice complete transparency in our sourcing and happily bring these beautiful, complex coffees back to Oregon to be roasted and enjoyed by you.</h5><br />
-                        <h5>©2023, Case Coffee Roasters</h5>
-                    </div>
-                    <div className="col-3">
-                        <h3>GET IN TOUCH</h3><br/>
-                        <h5>info@casecoffeeroasters.com</h5>
+                        <h5>Procuramos, pela via do desporto, melhorar as capacidades individuais ao nível do desenvolvimento físico, psíquico e social. As classes são organizadas por idades, nível e objectivos de aprendizagem.</h5><br />
+                        <h3>GET IN TOUCH!</h3>
                         <div className="social-icons">
                             <i className="fab fa-twitter"></i>
                             <i className="fab fa-facebook"></i>
                             <i className="fab fa-instagram"></i>
                         </div>
-
+                        <h5>©2023, Molinohs do Mar</h5>
                     </div>
                 </div>
-            {/* </body> */}
         </footer>
     )
 }

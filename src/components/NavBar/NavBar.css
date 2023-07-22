@@ -1,0 +1,41 @@
+.container-fluid {
+    position: fixed;
+    width: stretch;
+    height: 6rem;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Change the font color for the navbar links */
+.navbar-nav .nav-link {
+    color: whitesmoke;
+}
+  
+  /* Change the font color for the brand/logo */
+  .navbar-brand {
+    color: whitesmoke;
+  }
+
+/* Change color when scrolling */
+nav {
+    /* Your default styles for the navbar */
+    /* This can be the color you want when the page is at the top */
+    background-color: transparent;
+    /* Add a transition for smooth color change */
+    transition: background-color 0.4s ease; 
+    position: fixed;
+    color: rgba(255,255,255,0.85);
+} 
+  
+  /* Add styles for the navbar when scrolled */
+nav.scrolled {
+    /* Your styles for the navbar when scrolled */
+    /* This can be the color you want when the page is scrolled down */
+    /* Update with your desired color */
+    background-color: #333; 
+    color: rgba(255,255,255,0.85);
+} 
+
