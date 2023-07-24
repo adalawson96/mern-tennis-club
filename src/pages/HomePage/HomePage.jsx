@@ -60,25 +60,12 @@ export default function HomePage(){
         </div>
         {/* Restaurant Section */}
         <div className="restaurant">
-            <h1>RESTAURANT</h1>
-            <br/>
-            <br/>
-            <h3>Restaurant- Monday-Friday 9-18h. </h3>
-            <h3>Saturday 10-15h.</h3>
+            <h1>OUR RESTAURANT</h1>
+            {/* <br/> */}
+            <h3>Monday-Friday 9-18h. Saturday 10-15h.</h3>
+            <h3>Telepone: +34 698 94 54 09</h3>
+            <button>Make Reservation</button>
         </div>
-
-        {/* Schedule Section */}
-        {/* <div className="schedule">
-            <div class="flex-container">
-                <div class="black-rectangle">
-                    <h1>SCHEDULE</h1>
-                    <h3>Tennis Court- Monday-Friday 9-18h.</h3>
-                    <h3>Saturday 10-15h.</h3><br/><br/><br/>
-                </div>
-            </div> */}
-            {/* <img src="/tennisCourtSchedule.png" alt="Tennis Court"/> */}
-            {/* <img src="/tennisCourtSchedule.png" alt="Tennis Court"/> */}
-        {/* </div>    */}
         </>
     )
 };

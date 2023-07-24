@@ -6,6 +6,15 @@ export default function Footer(){
                 <div className="footer">
                     <div className="col-1">
                      {/* INSERT MAP? */}
+                      {/* Schedule Section */}
+        {/* <div className="schedule">
+            <div class="flex-container">
+                <div class="black-rectangle">
+                    <h1>SCHEDULE</h1>
+                    <h3>Tennis Court- Monday-Friday 9-18h.</h3>
+                    <h3>Saturday 10-15h.</h3><br/><br/><br/>
+                </div>
+            </div> */}
                         <img src="./tennisLogo.png" alt="Logo" />
                     </div>
                     <div className="col-2">
