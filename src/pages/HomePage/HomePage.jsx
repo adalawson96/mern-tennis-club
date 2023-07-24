@@ -34,10 +34,13 @@ export default function HomePage(){
             </button>
         </div>
         <br />
+        {/* Text below */}
         <div className='subHeading'>
             <h3> Restaurant «XXX» is located in the Tennis Club Moinohs do Mar <br/> Ericeira, Portugal.</h3><br/>
             <h1>UPCOMING EVENTS</h1><br/>
         </div>
+
+        {/* Upcoming Events Section */}
         <div className="upcoming-events">
             <div className="card1">
                 <Link to="/events">{ <img src="/kidCamp.png" alt="Kid Camp"/>}</Link>
@@ -55,19 +58,27 @@ export default function HomePage(){
                 <Link to="/events{">{ <button>DETAILS</button> }</Link>
             </div>
         </div>
+        {/* Restaurant Section */}
         <div className="restaurant">
-            <h1>RESTUARANT</h1>
+            <h1>RESTAURANT</h1>
+            <br/>
+            <br/>
+            <h3>Restaurant- Monday-Friday 9-18h. </h3>
+            <h3>Saturday 10-15h.</h3>
         </div>
 
-        <div className="schedule">
-            {/* <h1>SCHEDULE</h1> */}
+        {/* Schedule Section */}
+        {/* <div className="schedule">
             <div class="flex-container">
                 <div class="black-rectangle">
                     <h1>SCHEDULE</h1>
+                    <h3>Tennis Court- Monday-Friday 9-18h.</h3>
+                    <h3>Saturday 10-15h.</h3><br/><br/><br/>
                 </div>
-            </div>
-        </div>
-            
+            </div> */}
+            {/* <img src="/tennisCourtSchedule.png" alt="Tennis Court"/> */}
+            {/* <img src="/tennisCourtSchedule.png" alt="Tennis Court"/> */}
+        {/* </div>    */}
         </>
     )
 };
