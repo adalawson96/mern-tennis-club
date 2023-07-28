@@ -1,10 +1,16 @@
 /* Carousel */
-.carousel-inner{
+.carousel-inner img{
     width: 100%; 
-    height: 36rem; 
-    /* This ensures the image maintains its aspect ratio */
-    object-fit: cover; 
-  }
+    /* height: 50%; */
+    /* object-fit: cover;  */
+    object-fit: auto;
+}
+
+#carouselAutoplaying {
+    height: 30rem;
+     overflow: hidden;
+}
+
 
 /* Text Below */
 .subHeading h3{
@@ -48,22 +54,15 @@
     line-height: 1.5;
   }
 
-.restaurant button {
-margin-left: auto;
-}
-
-.restaurant button {
-    padding: .2rem ;
-    /* margin-left: auto;  */
-    width: 10rem;
-    height: 3rem;
-    font-size: 1rem;
-    border-radius: 1rem;
-    border: none;
+.btn {
+    margin-left: auto;
     text-transform: uppercase;
 }
 
 .restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     padding-top: 10rem;
     padding-right: 2rem;
     background-image: url('https://i.imgur.com/QKGo2yK.pngg');

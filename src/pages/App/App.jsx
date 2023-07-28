@@ -35,6 +35,7 @@ import NavBar from '../../components/NavBar/NavBar';
 import HomePage from '../HomePage/HomePage';
 import EventsPage from "../EventsPage/EventsPage";
 import RestaurantPage from "../RestaurantPage/RestaurantPage";
+import EscolaPage from "../EscolaPage/EscolaPage";
 import Footer from "../../components/Footer/Footer";
 
 const App = () => {
@@ -46,6 +47,8 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/restaurant" element={<RestaurantPage />} />
+          <Route path="/escola" element={<EscolaPage />} />
+
         </Routes>
         <Footer />
       </main>

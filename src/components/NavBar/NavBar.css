@@ -1,41 +1,52 @@
 .container-fluid {
-    position: fixed;
-    width: stretch;
-    height: 6rem;
-    background-color: black;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+  position: fixed;
+  width: stretch;
+  height: 6rem;
+  background-color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 /* Change the font color for the navbar links */
 .navbar-nav .nav-link {
-    color: whitesmoke;
+  color: whitesmoke;
+}
+
+/* Target the links inside the .navbar-nav class */
+.navbar-nav .nav-link:hover {
+  color: #D1A249;
 }
   
-  /* Change the font color for the brand/logo */
-  .navbar-brand {
-    color: whitesmoke;
-  }
+/* Change the font color for the brand/logo */
+.navbar-brand{
+  color: white !important;
+}
+
+/* Change the collapsable hamburger icon */
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0' y1='0' x2='30' y2='0' stroke='%23ffffff' stroke-width='2'%3E%3C/line%3E%3Cline x1='0' y1='10' x2='30' y2='10' stroke='%23ffffff' stroke-width='2'%3E%3C/line%3E%3Cline x1='0' y1='20' x2='30' y2='20' stroke='%23ffffff' stroke-width='2'%3E%3C/line%3E%3C/svg%3E");
+}
 
 /* Change color when scrolling */
-nav {
+/* nav { */
     /* Your default styles for the navbar */
     /* This can be the color you want when the page is at the top */
-    background-color: transparent;
+    /* background-color: transparent; */
     /* Add a transition for smooth color change */
-    transition: background-color 0.4s ease; 
-    position: fixed;
-    color: rgba(255,255,255,0.85);
-} 
+    /* transition: background-color 0.4s ease;  */
+    /* position: fixed; */
+    /* color: rgba(255,255,255,0.85); */
+/* }  */
   
   /* Add styles for the navbar when scrolled */
-nav.scrolled {
+/* nav.scrolled { */
     /* Your styles for the navbar when scrolled */
     /* This can be the color you want when the page is scrolled down */
     /* Update with your desired color */
-    background-color: #333; 
-    color: rgba(255,255,255,0.85);
-} 
+    /* background-color: #333;  */
+    /* color: rgba(255,255,255,0.85); */
+/* }  */
+
 

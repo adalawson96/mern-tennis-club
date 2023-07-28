@@ -1,5 +1,5 @@
 import './NavBar.css';
-// import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect, useRef} from 'react';
 
 export default function NavBar(){
     // const [isScrolled, setIsScrolled] = useState(false);
@@ -23,7 +23,7 @@ export default function NavBar(){
 
     return (
         // <nav className={isScrolled ? 'scrolled' : ''}>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+            <nav id="mainNavbar" className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/">
                         <img src="./tennisLogo.png" alt="Logo" width="50" height="55" />
@@ -36,8 +36,7 @@ export default function NavBar(){
                         <div className="navbar-nav">
                         <a className="nav-link" href="/events">Events</a>
                         <a className="nav-link" href="/restaurant">Restaurant</a>
-                        <a className="nav-link" href="/schedule">Escola</a>
-                        {/* <a className="nav-link disabled">Schedule</a> */}
+                        <a className="nav-link" href="/escola">Escola</a>
                         </div>
                     </div>
                 </div>

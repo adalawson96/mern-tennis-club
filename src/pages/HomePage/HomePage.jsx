@@ -63,8 +63,9 @@ export default function HomePage(){
             <h1>OUR RESTAURANT</h1>
             {/* <br/> */}
             <h3>Monday-Friday 9-18h. Saturday 10-15h.</h3>
-            <h3>Telepone: +34 698 94 54 09</h3>
-            <button>Make Reservation</button>
+            <h3>Telephone: +34 698 94 54 09</h3>
+            {/* <button>Make Reservation</button> */}
+            <a className="btn btn-primary" href="/restaurant" role="button">Make Reservation</a>
         </div>
         </>
     )
