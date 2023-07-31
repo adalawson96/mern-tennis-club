@@ -9,6 +9,20 @@
   z-index: 1000;
 }
 
+/* pushes links to the right hnad side */
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar {
+  height: 7rem;
+}
+
+/* add space between text */
+.navbar-nav a {
+  margin-left: 2rem;
+}
+
 /* Change the font color for the navbar links */
 .navbar-nav .nav-link {
   color: whitesmoke;
@@ -28,6 +42,8 @@
 .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0' y1='0' x2='30' y2='0' stroke='%23ffffff' stroke-width='2'%3E%3C/line%3E%3Cline x1='0' y1='10' x2='30' y2='10' stroke='%23ffffff' stroke-width='2'%3E%3C/line%3E%3Cline x1='0' y1='20' x2='30' y2='20' stroke='%23ffffff' stroke-width='2'%3E%3C/line%3E%3C/svg%3E");
 }
+
+
 
 /* Change color when scrolling */
 /* nav { */

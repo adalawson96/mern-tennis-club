@@ -1,7 +1,68 @@
 import './NavBar.css';
-// import React, { useState, useEffect, useRef} from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import { Nav, NavDropdown } from 'react-bootstrap';
 
 export default function NavBar(){
+
+    const [navbarCollapsed, setNavbarCollapsed] = useState(true);
+    const navbarRef = useRef();
+
+    const handleToggle = () => {
+    setNavbarCollapsed(!navbarCollapsed);
+    };
+
+    const handleOutsideClick = (event) => {
+    if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setNavbarCollapsed(true);
+    }
+    };
+
+    useEffect(() => {
+    if (!navbarCollapsed) {
+        document.addEventListener('click', handleOutsideClick);
+    }
+
+    return () => {
+        document.removeEventListener('click', handleOutsideClick);
+    };
+    }, [navbarCollapsed]);
+
+    return (
+    <nav id="mainNavbar" className="navbar navbar-expand-lg bg-body-tertiary" ref={navbarRef}>
+        <div className="container-fluid">
+        <a className="navbar-brand" href="/">
+            <img src="./tennisLogo.png" alt="Logo" width="50" height="55" className="d-inline-block align-text-top" />
+            Moinohs do Mar
+        </a>
+        <button className="navbar-toggler" type="button" onClick={handleToggle} aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className={`collapse navbar-collapse ${navbarCollapsed ? '' : 'show'} justify-content-end`} id="navbarNavAltMarkup">
+            <ul className="navbar-nav">
+            <li className="nav-item">
+                <a className="nav-link" href="/events">Events</a>
+            </li>
+            <li className="nav-item">
+                <a className="nav-link" href="/restaurant">Restaurant</a>
+            </li>
+            <Nav.Link href="/restaurant">Restaurant</Nav.Link>
+            <NavDropdown title="Escola" id="escola-dropdown">
+            <NavDropdown.Item href="/escola/courses">Courses</NavDropdown.Item>
+            <NavDropdown.Item href="/escola/staff">Staff</NavDropdown.Item>
+            <NavDropdown.Item href="/escola/about">About</NavDropdown.Item>
+            </NavDropdown>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    );
+}
+
+
+
+
+// to change the background opacity when scrolling down
+
     // const [isScrolled, setIsScrolled] = useState(false);
 
     // useEffect(() => {
@@ -20,27 +81,3 @@ export default function NavBar(){
     //     // Change this condition based on when you want the color to change
     //     setIsScrolled(shouldChangeColor);
     // };
-
-    return (
-        // <nav className={isScrolled ? 'scrolled' : ''}>
-            <nav id="mainNavbar" className="navbar navbar-expand-lg bg-body-tertiary">
-                <div className="container-fluid">
-                    <a className="navbar-brand" href="/">
-                        <img src="./tennisLogo.png" alt="Logo" width="50" height="55" />
-                        Moinohs do Mar
-                    </a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div className="navbar-nav">
-                        <a className="nav-link" href="/events">Events</a>
-                        <a className="nav-link" href="/restaurant">Restaurant</a>
-                        <a className="nav-link" href="/escola">Escola</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        // </nav>
-    )
-};

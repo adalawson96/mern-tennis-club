@@ -45,17 +45,17 @@ export default function HomePage(){
             <div className="card1">
                 <Link to="/events">{ <img src="/kidCamp.png" alt="Kid Camp"/>}</Link>
                 <h3>KIDS CAMP</h3>
-                <Link to="/events{">{ <button>DETAILS</button> }</Link>
+                <Link to="/events">{ <button>DETAILS</button> }</Link>
             </div>
             <div className="card2">
             <Link to="/events">{ <img src="/seniorCamp.png" alt="Senior Camp"/>}</Link><br></br>
                 <h3>SENIOR CAMP</h3>
-                <Link to="/events{">{ <button>DETAILS</button> }</Link>
+                <Link to="/events">{ <button>DETAILS</button> }</Link>
             </div>
             <div className="card2">
             <Link to="/events">{ <img src="/seniorCamp.png" alt="Senior Camp"/>}</Link><br></br>
                 <h3>SENIOR CAMP</h3>
-                <Link to="/events{">{ <button>DETAILS</button> }</Link>
+                <Link to="/events">{ <button>DETAILS</button> }</Link>
             </div>
         </div>
         {/* Restaurant Section */}
