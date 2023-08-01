@@ -3,6 +3,7 @@ import './EventsPage.css';
 export default function EventsPage(){
     return(
         <>
+        <h1>UPCOMING EVENTS</h1>
           {/* <div class="card mb-3" style="max-width: ;"> */}
             <div className='cardA'>
                 <div className="card mb-3">

@@ -45,11 +45,10 @@ export default function NavBar(){
             <li className="nav-item">
                 <a className="nav-link" href="/restaurant">Restaurant</a>
             </li>
-            <Nav.Link href="/restaurant">Restaurant</Nav.Link>
-            <NavDropdown title="Escola" id="escola-dropdown">
-            <NavDropdown.Item href="/escola/courses">Courses</NavDropdown.Item>
-            <NavDropdown.Item href="/escola/staff">Staff</NavDropdown.Item>
-            <NavDropdown.Item href="/escola/about">About</NavDropdown.Item>
+            <NavDropdown title="School" id="school-dropdown">
+            <NavDropdown.Item href="/school/courses">Courses</NavDropdown.Item>
+            <NavDropdown.Item href="/school/staff">Staff</NavDropdown.Item>
+            {/* <NavDropdown.Item href="/school/about">About</NavDropdown.Item> */}
             </NavDropdown>
             </ul>
         </div>

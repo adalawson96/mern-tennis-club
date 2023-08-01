@@ -36,7 +36,7 @@ export default function HomePage(){
         <br />
         {/* Text below */}
         <div className='subHeading'>
-            <h3> Restaurant «XXX» is located in the Tennis Club Moinohs do Mar <br/> Ericeira, Portugal.</h3><br/>
+            <h3> Restaurant «XXX» is located in the tennis club Break Point <br/> Ericeira, Portugal.</h3><br/>
             <h1>UPCOMING EVENTS</h1><br/>
         </div>
 
