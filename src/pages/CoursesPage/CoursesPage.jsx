@@ -15,6 +15,10 @@ export default function CoursesPage(){
                     <p className="card-text">
                     €45/month /1x Week  <br /> €80/month /2x Week
                     </p>
+                    <div className="social-icons">
+                        <a href="mailto:hello@breakpointclub.com" style={{ color: 'inherit', textDecoration: 'none' }}>{<i className="fa fa-envelope-o" aria-hidden="true"></i>}</a>
+                        <a href="https://api.whatsapp.com/send?phone= +351910544829" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>{<i className="fa fa-whatsapp" aria-hidden="true"></i>}</a>
+                    </div>
                     </div>
                 </div>
                 <div className="card text-bg-warning mb-3" style={{ maxWidth: '18rem' }}>
@@ -24,6 +28,10 @@ export default function CoursesPage(){
                     <p className="card-text">
                     €45/month /1x Week  <br /> €100/month /2x Week <br /> €150/month /3x Week
                     </p>
+                    <div className="social-icons">
+                        <a href="mailto:hello@breakpointclub.com" style={{ color: 'inherit', textDecoration: 'none' }}>{<i className="fa fa-envelope-o" aria-hidden="true"></i>}</a>
+                        <a href="https://api.whatsapp.com/send?phone= +351910544829" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>{<i className="fa fa-whatsapp" aria-hidden="true"></i>}</a>
+                    </div>
                     </div>
                 </div>
                 <div className="card text-bg-warning mb-3" style={{ maxWidth: '18rem' }}>
@@ -33,6 +41,10 @@ export default function CoursesPage(){
                     <p className="card-text">
                     €65/month /1x Week €135/month /2x Week <br /> €195/month /3x Week
                     </p>
+                    <div className="social-icons">
+                        <a href="mailto:hello@breakpointclub.com" style={{ color: 'inherit', textDecoration: 'none' }}>{<i className="fa fa-envelope-o" aria-hidden="true"></i>}</a>
+                        <a href="https://api.whatsapp.com/send?phone= +351910544829" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>{<i className="fa fa-whatsapp" aria-hidden="true"></i>}</a>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -84,6 +96,7 @@ export default function CoursesPage(){
                     </div>
                 </div>
             </div>
+            <h5>*Discount only for bookings made in October & for 1 month. Not for private courses.</h5>
         </div>
     </>
    )
