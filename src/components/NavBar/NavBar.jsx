@@ -32,7 +32,7 @@ export default function NavBar(){
         <div className="container-fluid">
         <a className="navbar-brand" href="/">
             <img src="./tennisLogo.png" alt="Logo" width="50" height="55" className="d-inline-block align-text-top" />
-            Moinohs do Mar
+            Break Point
         </a>
         <button className="navbar-toggler" type="button" onClick={handleToggle} aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
